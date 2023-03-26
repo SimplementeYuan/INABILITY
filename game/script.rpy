@@ -51,6 +51,9 @@ layeredimage Moyashi_1:
         attribute emocionada:
             "fondo feliz.png"
 
+        attribute enfadada:
+            "fondo enfadado.png"
+
         
     group cuerpo:
 
