@@ -54,6 +54,12 @@ layeredimage Moyashi_1:
         attribute enfadada:
             "fondo enfadado.png"
 
+        attribute indignada:
+            "fondo indignado"
+
+        attribute triste:
+            "fondo triste"
+
         
     group cuerpo:
 
@@ -63,6 +69,15 @@ layeredimage Moyashi_1:
         attribute emocionada:
             "cuerpo emocionado moyashi.png"
 
+        attribute enfadada:
+            "cuerpo enfadado moyashi.png"
+
+        attribute indignada:
+            "cuerpo indignado moyashi.png"
+
+        attribute triste:
+            "cuerpo triste moyashi.png"
+
     group ojos:
 
         attribute neutral:
@@ -71,13 +86,31 @@ layeredimage Moyashi_1:
         attribute emocionada:
             "ojos emocionado moyashi.png"
 
-    group boca:
+        attribute enfadada:
+            "ojos enfadado moyashi.png "
 
+        attribute indignada:
+            "ojos indignado moyashi.png"
+
+        attribute triste:
+            "ojos tristes moyashi.png"
+
+    group boca:
+ 
         attribute neutral:
             "boca neutral moyashi.png"
 
         attribute emocionada:
             "boca emocionado moyashi.png"
+
+        attribute enfadada:
+            "boca enfadada moyashi.png"
+
+        attribute indignada:
+            "boca indignado moyashi.png"
+
+        attribute triste:
+            "boca triste moyashi.png"
 
     group ropa:
 
@@ -87,6 +120,12 @@ layeredimage Moyashi_1:
         attribute emocionada:
             "ropa emocionado 1 moyashi.png"
 
+        attribute indignada:
+            "ropa indignado 1 moyashi.png"
+
+        attribute triste:
+            "ropa triste 1 moyashi.png"
+
     group peinado:
 
         attribute neutral:
@@ -94,6 +133,15 @@ layeredimage Moyashi_1:
 
         attribute emocionada:
             "peinado emocionado 1 moyashi.png"
+
+        attribute enfadada:
+            "peinado enfadado 1 moyashi.png"
+
+        attribute indignada:
+            "peinado indignado 1 moyashi.png"
+
+        attribute triste:
+            "peinado triste 1 moyashi.png"
     
     always:
         "Circulo.png"
