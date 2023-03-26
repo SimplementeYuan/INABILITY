@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# More elements we donot need
+
+.vscode/
+errors.txt
+log.txt
+traceback.txt

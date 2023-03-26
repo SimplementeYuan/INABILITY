@@ -290,8 +290,12 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if renpy.get_screen("main_menu"):
+            xpos 850
+            yalign 0.7
+        else:
+            xoffset 60
+            yalign 0.7
 
         spacing gui.navigation_spacing
 
@@ -340,6 +344,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    xalign 0.5
 
 
 ## Pantalla del menú principal #################################################
@@ -385,13 +390,13 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
+    xalign 0.51
     xoffset -30
     xmaximum 1200
-    yalign 1.0
+    yalign 0.3
     yoffset -30
 
 style main_menu_text:
@@ -470,8 +475,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     use navigation
 
     textbutton _("Volver"):
-        style "return_button"
-
+        style "return_button"                
         action Return()
 
     label title
@@ -652,7 +656,7 @@ screen file_slots(title):
                 style_prefix "page"
 
                 xalign 0.5
-                yalign 1.0
+                yalign 0.9
 
                 spacing gui.page_spacing
 
