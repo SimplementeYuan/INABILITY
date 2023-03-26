@@ -18,7 +18,6 @@ label cap1:
 
 n "Una tarde tranquila, en un pueblo de un mundo cualquiera, los pájaros cantaban sus maravillosas melodías mientras las flores llenaban el lugar de color."
 
-show Moyashi_1 neutral
 
 n "Allí se encontraba Moyashi, una joven muy apreciada y amable. La cual estaba hablando con los aldeanos."
 
@@ -31,11 +30,12 @@ pa "Es sobre eso, ¿verdad?"
 "El chico asiente con una mirada de lástima. ¿Laura también está enterada?"
 
 "Esto comienza a olerme a chamusquina, necesito saber qué es."
-hide Moyashi_1 
 
-show Moyashi_1 emocionada
+show Moyashi_1 indignada
 
 m "¿Qué es “eso”?"
+
+hide Moyashi_1 
 
 wi "La sequía ha dado su último golpe acabando completamente con el agua del lago."
 
