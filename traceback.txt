@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 109, in script call
+    call capitulo1N from capitulo_1_neutral
+  File "game/cap/capitulo 1 neutral.rpy", line 53, in script
+    guardiana_bosques "Soy la guardiana de este bosque, vine atraida por tu llamado. Supongo que eres"
+Exception: Sayer 'guardiana_bosques' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 109, in script call
+    call capitulo1N from capitulo_1_neutral
+  File "game/cap/capitulo 1 neutral.rpy", line 53, in script
+    guardiana_bosques "Soy la guardiana de este bosque, vine atraida por tu llamado. Supongo que eres"
+  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'guardiana_bosques' is not defined.
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.0.3.22090809
+Inability Hero 1.0
+Sun Mar 26 00:57:06 2023

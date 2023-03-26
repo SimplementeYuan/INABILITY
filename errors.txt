@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/gui.rpy", line 58: style property gui is not known.
+    gui.dialogue_text_outlines [(2, "#000000", 0, 0)]
+       ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sat Mar 25 20:54:35 2023
