@@ -60,7 +60,7 @@ define gui.dialogue_text_outlines = [ (2, "#000000ff", 0, 0) ]
 
 define gui.name_text_outlines = [ (2, "#ffffffff", 0, 0) ]
     
-define gui.text_font = "GoudyStMTT.ttf"
+define gui.text_font = "fonts/GoudyStMTT.ttf"
 
 ## El tipo de letra de los nombres de personajes
     
