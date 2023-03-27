@@ -134,3 +134,9 @@ dmypy.json
 errors.txt
 log.txt
 traceback.txt
+.rpyc
+.rpyb
+
+game/cache
+game/saves
+game/tl
