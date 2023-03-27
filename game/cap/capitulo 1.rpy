@@ -31,33 +31,53 @@ pa "Es sobre eso, ¿verdad?"
 
 "Esto comienza a olerme a chamusquina, necesito saber qué es."
 
-show Moyashi_1 indignada
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
 
 m "¿Qué es “eso”?"
 
-hide Moyashi_1 
+hide Moyashi
 
 wi "La sequía ha dado su último golpe acabando completamente con el agua del lago."
 
 wi "Nos ha pillado por sorpresa porque esperábamos alguna lluvia, ya que en pueblos cercanos fue así, pero aquí ni gota."
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "Pero aun así se ha agotado muy rápido… Yo pensaba que duraría un par de meses más."
+
+hide Moyashi
 
 "Nuestras tierras están situadas al sur y suele hacer mucho calor, pero aunque sea así deberíamos estar en plena época de lluvias. No tiene sentido que no llueva ni una sola vez."
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "Debemos encontrar una alternativa rápida, aunque no llueva no podemos estar sin agua. ¿Aún quedan reservas?"
+
+hide Moyashi
 
 lau "¡Afirmativo, jefa!"
 
+show Moyashi f_i c_i o_i b_i ri_1 pi_1 with dissolve
+
 m "¿Cuántas veces tengo que decir que no soy la jefa?"
 
+hide Moyashi with pixellate
+
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with pixellate
+
 m "Solo me gusta apoyar al pueblo o ayudar cuando es necesario."
+
+hide Moyashi with dissolve
 
 wi "Pero es que nosotros la admiramos. Siempre está cuando hace falta, nos dirige cuando no sabemos adónde ir."
 
 wi "Como cuando casi me peleo con ese chaval en el bar de Leibar."
 
+show Moyashi f_i c_i o_i b_i ri_1 pi_1 with dissolve
+
 m "¡Pero si el héroe ahí fuiste tú! Defendiste a Laura con mucha valentía, me acuerdo perfectamente cómo trató de acosarla y tú saltaste a defenderla."
+
+hide Moyashi
 
 wi "Pero luego de eso casi me da una paliza…"
 
@@ -75,13 +95,23 @@ wi "¡La hiciste crecer y lo atrapaste en sus ramas! Te admiramos muchísimo y e
 
 "No me lo quiero ni imaginar."
 
+show Moyashi f_i c_i o_i b_i ri_1 pi_1 with dissolve
+
 m "Bueno, decid lo que queráis."
+
+hide Moyashi
+
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
 
 m "Igualmente, hay que hacer algo, avisad a todo el pueblo de que dentro de 24 horas habrá una reunión de máxima urgencia para encontrar una solución."
 
 lau "¡De acuerdo, avisaremos a todos! ¿Alguna idea más para poder solucionar el problema?"
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "Podríamos adentrarnos en el bosque a por más reservas de agua, aunque sea para unos días."
+
+hide Moyashi
 
 "La pareja asintió y fueron rápidamente a avisar a todos. Espero que esto pueda calmar un poco las cosas."
 
@@ -117,25 +147,41 @@ m "Podríamos adentrarnos en el bosque a por más reservas de agua, aunque sea p
 
 g "Bienvenida joven Moyashi, ¿a qué se debe su visita?"
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "Me gustaría llevarme agua del lago. Estamos teniendo problemas con la sequía y la necesitamos hasta conseguir otra forma de obtenerla."
+
+hide Moyashi
 
 g "Sin problema, pero intentad encontrar una solución rápidamente."
 
 g "La sequía también empieza a afectar al bosque… Qué duras son estas tierras."
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "Y que lo digas, aunque no podemos hacer nada si no llueve. Si hubiera alguna forma de poder provocar precipitaciones…"
+
+hide Moyashi
 
 g "A mí no me preguntes. Soy la guardiana de los bosques, pero no tengo ningún poder sobre el cielo… Qué fácil sería todo si lo tuviese."
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "Pues si nos lo permitís, vendrán personas del pueblo para recoger agua. Mañana le devolveré el favor con una pequeña limpieza del bosque."
 
+hide Moyashi 
+
 g "Ya que lo menciones, sigo sin entender por qué aprecias tanto a los humanos, son sucios. Tiran basura al bosque y encima tienes que limpiarlo. Son seres muy destructivos."
+
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
 
 m "Supongo que el hecho de que yo también sea una humana puede afectar, pero no todos los humanos son malos y tienen la capacidad única de crear debido a sus actos."
 
 m "Gracias a su influencia, muchos lugares que fueron devastados por otras criaturas o fenómenos atmosféricos son repoblados de plantas y animales."
 
 m "Crean inventos para ayudar a las plantas a crecer de mejor forma e incluso crean especies nuevas debido a su crianza."
+
+hide Moyashi
 
 g "Es cierto que son criaturas bastante curiosas. Aunque no me terminas de convencer la verdad..."
 
@@ -223,7 +269,7 @@ m "Silvis da mihi you can."
 
 "Miro al cielo pensando en el día de mañana, la preciosa luna brilla en medio del amplio cielo estrellado."
 
-m "¿Eh?"
+"¿Eh?"
 
 "¿La luna?"
 
@@ -245,7 +291,11 @@ ol "… Pero quiero seguir jugando."
 
 "La pobre mujer no da abasto."
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "Nadia, no te preocupes, yo me ocupo. Vete a casa y ve preparando la cena que mañana trabajas."
+
+hide Moyashi 
 
 na "¿Segura? De verdad me vendría muy bien, si puedes cansarlo un poco y traerlo a casa me harías un favor."
 
@@ -257,9 +307,15 @@ na "Mil millones de gracias, de verdad que no sabríamos qué hacer sin usted."
 
 "Al verme se sube a un pequeño columpio de madera y me pide que me acerque. Voy con él y le empujo un poco para balancearlo con cuidado."
 
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
+
 m "¿Por qué no te fuiste cuando te lo pidió mamá?"
 
+hide Moyashi
+
 ol "Todavía no estoy cansado, quiero jugar un rato más."
+
+show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
 
 m "¡Pero mamá está cansada y mañana tiene que madrugar!"
 

@@ -41,106 +41,109 @@ define Niños = Character("Niños")
 
 #Layer image:
 
-layeredimage Moyashi_1:
+layeredimage Moyashi:
 
     group fondos:
 
-        attribute neutral:
+        attribute f_n:
             "fondo neutral.png"
 
-        attribute emocionada:
+        attribute f_f:
             "fondo feliz.png"
 
-        attribute enfadada:
+        attribute f_e:
             "fondo enfadado.png"
 
-        attribute indignada:
-            "fondo indignado"
+        attribute f_i:
+            "fondo indignado.png"
 
-        attribute triste:
-            "fondo triste"
+        attribute f_t:
+            "fondo triste.png"
 
         
     group cuerpo:
 
-        attribute neutral:
+        attribute c_n:
             "cuerpo neutral moyashi.png"
 
-        attribute emocionada:
+        attribute c_f:
             "cuerpo emocionado moyashi.png"
 
-        attribute enfadada:
+        attribute c_e:
             "cuerpo enfadado moyashi.png"
-
-        attribute indignada:
+            
+        attribute c_i:
             "cuerpo indignado moyashi.png"
 
-        attribute triste:
+        attribute c_t:
             "cuerpo triste moyashi.png"
 
     group ojos:
 
-        attribute neutral:
+        attribute o_n:
             "ojos neutral moyashi.png"
 
-        attribute emocionada:
+        attribute o_f:
             "ojos emocionado moyashi.png"
 
-        attribute enfadada:
-            "ojos enfadado moyashi.png "
+        attribute o_e:
+            "ojos enfadado moyashi.png"
 
-        attribute indignada:
+        attribute o_i:
             "ojos indignado moyashi.png"
 
-        attribute triste:
+        attribute o_t:
             "ojos tristes moyashi.png"
 
     group boca:
  
-        attribute neutral:
+        attribute b_n:
             "boca neutral moyashi.png"
 
-        attribute emocionada:
+        attribute b_f:
             "boca emocionado moyashi.png"
 
-        attribute enfadada:
-            "boca enfadada moyashi.png"
+        attribute b_e:
+            "boca enfadado moyashi.png"
 
-        attribute indignada:
+        attribute b_i:
             "boca indignado moyashi.png"
 
-        attribute triste:
+        attribute b_t:
             "boca triste moyashi.png"
 
     group ropa:
 
-        attribute neutral:
+        attribute rn_1:
             "ropa neutral 1 moyashi.png"
 
-        attribute emocionada:
+        attribute rf_1:
             "ropa emocionado 1 moyashi.png"
 
-        attribute indignada:
+        attribute re_1:
+            "ropa enfadado 1 moyashi.png"
+
+        attribute ri_1:
             "ropa indignado 1 moyashi.png"
 
-        attribute triste:
+        attribute rt_1:
             "ropa triste 1 moyashi.png"
 
     group peinado:
 
-        attribute neutral:
+        attribute pn_1:
             "peinado neutral 1 moyashi.png"
 
-        attribute emocionada:
+        attribute pf_1:
             "peinado emocionado 1 moyashi.png"
 
-        attribute enfadada:
+        attribute pe_1:
             "peinado enfadado 1 moyashi.png"
 
-        attribute indignada:
+        attribute pi_1:
             "peinado indignado 1 moyashi.png"
 
-        attribute triste:
+        attribute pt_1:
             "peinado triste 1 moyashi.png"
     
     always:
@@ -153,11 +156,11 @@ layeredimage Moyashi_1:
 
 label start:
 
-    call cap1 from capitulo_1
-    call cap2 from capitulo_2
+    call cap1 from capitulo1
+    call cap2 from capitulo2
     # Finaliza el juego:
     if vr == False:
-        call capitulo1N from capitulo_1_neutral
+        call capitulo1N from capitulo1neutral
     elif vr == True:
-        call capitulo_1_vara from capitulo_1_vara
+        call capitulo1vara from capitulo1vara
     return
