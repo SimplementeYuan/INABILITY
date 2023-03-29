@@ -1,76 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('peinadoneutral 1 moyashi.png') at 0x00000000058bf100>:
-  File "game/script.rpy", line 159, in script call
-    call cap1 from capitulo1
-  File "game/cap/capitulo 1.rpy", line 34, in script
-    show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
-OSError: Couldn't find file 'peinadoneutral 1 moyashi.png'.
+While running game code:
+  File "game/cap/capitulo 2.rpy", line 302, in script
+    $ vr == True
+  File "game/cap/capitulo 2.rpy", line 302, in script
+    $ vr == True
+  File "game/cap/capitulo 2.rpy", line 302, in <module>
+    $ vr == True
+NameError: name 'vr' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 159, in script call
-    call cap1 from capitulo1
-  File "game/cap/capitulo 1.rpy", line 34, in script
-    show Moyashi f_n c_n o_n b_n rn_1 pn_1 with dissolve
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 1658, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\exports.py", line 1657, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 2798, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\transition.py", line 378, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\image.py", line 506, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\image.py", line 309, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
-    return cache.get(self, render=True)
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
-    surf = image.load()
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
-    raise e
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
-    filelike = renpy.loader.load(self.filename)
-  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'peinadoneutral 1 moyashi.png'.
+  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/cap/capitulo 2.rpy", line 302, in script
+    $ vr == True
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/cap/capitulo 2.rpy", line 302, in script
+    $ vr == True
+  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\zeelt\OneDrive\Escritorio\Renpy\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/cap/capitulo 2.rpy", line 302, in <module>
+    $ vr == True
+NameError: name 'vr' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 Inability Hero Pre-Alpha
-Mon Mar 27 09:52:25 2023
+Wed Mar 29 08:49:46 2023

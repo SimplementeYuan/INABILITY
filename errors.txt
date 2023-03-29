@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/cap/capitulo 1.rpy", line 34: end of line expected.
-    show Moyashi f_n c_n o_n b_n rn_1 pn_1 behind Circulo with dissolve and show Circulo with dissolve
-                                                                            ^
+The label capitulo1vara is defined twice, at File "game/cap/Final malo 1.rpyc", line 1:
+
+and File "game/cap/capitulo1vara.rpyc", line 1:
+
+
+
+The label capitulo1vara is defined twice, at File "game/cap/capitulo1vara.rpyc", line 1:
+
+and File "game/cap/final_malo_1.rpy", line 1:
+label capitulo1vara:
+
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Mar 27 10:10:46 2023
+Wed Mar 29 08:50:30 2023
