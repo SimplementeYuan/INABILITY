@@ -27,8 +27,8 @@ define ol = Character("Oliver")
 define b = Character("Borracho")
 define aca = Character("Anciana")
 define aco = Character("Anciano")
-define co = Character("Cocinero")
-define pa = Character("Panadera")
+define ca = Character("Camarero")
+define pa = Character("Leonor")
 define jc = Character("Jefe de Cocina")
 define loli = Character("Los Lilian")
 define gar = Character("Garsa")
@@ -162,5 +162,5 @@ label start:
     if vr == False:
         call capitulo1N from capitulo1neutral
     elif vr == True:
-        call capitulo1vara from capitulo1vara
+        call capitulo1vara from final_malo_1
     return
