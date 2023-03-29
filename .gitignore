@@ -131,6 +131,12 @@ dmypy.json
 # More elements we donot need
 
 .vscode/
-errors.txt
-log.txt
-traceback.txt
+/errors.txt
+/log.txt
+/traceback.txt
+*.rpyc
+*.rpyb
+
+game/cache
+game/saves
+game/tl
